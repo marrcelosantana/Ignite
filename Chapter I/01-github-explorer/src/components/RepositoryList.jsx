@@ -1,4 +1,5 @@
 import { RepositoryItem } from "./RepositoryItem";
+import '../styles/repositories.scss';
 
 const repository = {
   name: 'unform',
@@ -9,7 +10,7 @@ const repository = {
 export function RepositoryList() {
   return (
     <section className="repository-list">
-      <h2>Lista de repositórios</h2>
+      <h1>Lista de repositórios</h1>
       <ul>
         <RepositoryItem repository={ repository }/>
         <RepositoryItem repository={ repository }/>
