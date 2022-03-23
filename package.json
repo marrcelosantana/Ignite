@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "axios": "^0.26.1",
+    "miragejs": "^0.1.43"
+  }
+}
