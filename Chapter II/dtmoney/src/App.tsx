@@ -1,5 +1,5 @@
 import { Header } from "./components/Header";
-import { Summary } from "./components/Summary";
+import { Dashboard } from "./components/Dashboard";
 import { GlobalStyle } from "./styles/global"
 
 export function App() {
@@ -7,7 +7,7 @@ export function App() {
     <>
       <GlobalStyle/>
       <Header/>
-      <Summary/>
+      <Dashboard/>
     </>
   );
 }
