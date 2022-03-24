@@ -17,7 +17,7 @@ export function App() {
   function handleClosenNewTransactionModal() {
     setIsNewTransactionModalOpen(false);
   }
-  
+
   return (
     <>
       <GlobalStyle />
