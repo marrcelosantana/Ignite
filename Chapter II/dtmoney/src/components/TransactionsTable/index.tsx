@@ -1,15 +1,8 @@
 import { useEffect, useState } from "react";
+import { Transaction } from "../../models/transaction";
 import { api } from "../../services/api";
 import { Container } from "./styles";
 
-interface Transaction {
-  id: number;
-  title: string;
-  amount: number;
-  type: string;
-  category: string;
-  createdAt: string;
-}
 
 export function TransactionsTable() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
