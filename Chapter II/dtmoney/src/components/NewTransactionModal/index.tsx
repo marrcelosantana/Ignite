@@ -36,8 +36,8 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
       <Container>
         <h2>Cadastrar Transação</h2>
 
-        <input placeholder="Título" value={title} onChange={event => setTitle(event.target.value)}/>
-        <input type="number" placeholder="Valor" value={value} onChange={event => setValue(Number(event.target.value))}/>
+        <input placeholder="Título" value={title} onChange={(event) => setTitle(event.target.value)}/>
+        <input type="number" placeholder="Valor" value={value} onChange={(event) => setValue(Number(event.target.value))}/>
 
         <TransactionTypeContainer>
           <RadioBox type="button" onClick={() => { setType('deposit') }} isActive={type === 'deposit'} activeColor="green">
@@ -51,7 +51,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
           </RadioBox>
         </TransactionTypeContainer>
 
-        <input placeholder="Categoria" value={category} onChange={event => setCategory(event.target.value)}/>
+        <input placeholder="Categoria" value={category} onChange={(event) => setCategory(event.target.value)}/>
 
         <button type="submit" onClick={handleCreateNewTransaction}>Cadastrar</button>
       </Container>
