@@ -3,7 +3,6 @@ import { Transaction } from "../../models/transaction";
 import { api } from "../../services/api";
 import { Container } from "./styles";
 
-
 export function TransactionsTable() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   useEffect(() => {
