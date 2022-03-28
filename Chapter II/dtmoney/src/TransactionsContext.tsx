@@ -24,12 +24,9 @@ export function TransactionsProvider({children} : TransactionsProviderProps) {
       ...transactionInput,
       createdAt: new Date(),
     });
-    
+
     const { transaction } = response.data;
-    setTransactions([
-      ...transactions,
-      transaction
-    ]);
+    setTransactions([...transactions, transaction]);
   }
 
   return (
